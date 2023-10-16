@@ -9,7 +9,7 @@
 }
 body {
   max-width: 100vw;
-  height: fit-content;
+  height: 100vh;
   background: rgba(140, 196, 97, 1);
 }
 a {
@@ -18,7 +18,7 @@ a {
 
 .main-class {
   width: 100%;
-  height: fit-content;
+  height: 100vh;
 }
 /* score board section */
 .score-board {
@@ -68,7 +68,6 @@ a {
 #game-playboard {
   width: 100%;
   height: 300px;
-  position: relative;
 }
 .game-playboard {
   margin-top: 100px;
@@ -241,7 +240,7 @@ a {
 .game-rules {
   position: absolute;
   right: 30px;
-  top: -70px;
+  bottom: 80px;
   width: 280px;
   height: 330px;
   border: 7px solid white;
@@ -252,7 +251,8 @@ a {
   display: none;
 }
 .btn-section {
-  position: relative;
+  position: absolute;
+  bottom: 0;
   width: 100%;
   height: 50px;
   padding-right: 20px;
@@ -452,12 +452,12 @@ a {
 @media screen and (max-width: 450px) {
   .main-class {
     width: 100vw;
-    height: max-content;
-    background-color: red;
+    height: 100vh;
   }
   .score-board {
     width: 90%;
-    height: 120px;
+    height: 150px;
+    margin-top: 30px;
   }
   .score {
     width: 100px;
@@ -478,12 +478,12 @@ a {
     margin: auto;
   }
   .game-playboard {
-    margin-top: 60px;
     margin: auto;
   }
   .game-select {
     width: 90%;
     margin-left: 10%;
+    margin-top: 100px;
   }
   .game-play-show {
     height: 550px;
@@ -496,7 +496,7 @@ a {
     margin-bottom: 20px;
   }
   .container {
-    width: 90vw;
+    width: 100vw;
     height: fit-content;
     margin: auto;
   }
@@ -506,7 +506,7 @@ a {
   #cup {
     height: 150px;
     width: 150px;
-    left: 100px;
+    left: 25%;
   }
   .winnings {
     width: 90vw;
