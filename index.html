@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-paper-stone-game</title>
+    <link rel="stylesheet" href="/CSS/index.css"/>
+    <link rel="stylesheet" href="/CSS/animation.css"/>
+    <script type="module" src="js/index.js"></script>
+</head>
+<body>
+    <main class="main-class">
+    <section id="score-board">
+    <div class="score-board">
+     <div class="game-heading">
+        <h1>ROCK</h1>
+        <h1>PAPER</h1>
+        <h1>SCISSORS</h1>
+
+     </div>
+     <div class="score">
+       <p>COMPUTER</p> 
+       <p>SCORE</p>
+       <h1 id="computer-score">0</h1>
+     </div>
+     <div class="score" >
+        <p>YOUR</p> 
+        <p>SCORE</p>
+        <h1 id="your-score">0</h1>
+      </div>
+     </div>
+    </section>
+
+      <section id="game-playboard">
+       <div class="game-playboard">
+
+        <!-- taking input from user -->
+        <div class="game-select">
+            <div></div> 
+            <div></div> 
+            <div></div> 
+        <div class="circle" id="circle1">
+            <div id="rock">
+           <img src="./assets/rock.png" alt="rock"/>
+            </div>
+         </div>
+        <div class="circle" id="circle2">
+           <div id="scissors">
+           <img src="./assets/scissors.png" alt="scissors"/>
+           </div>
+        </div>
+        <div class="circle" id="circle3">
+            <div id="paper">
+             <img src="./assets/paper.png" alt="paper"/>
+            </div>
+        </div>
+        </div>
+
+        <!-- game result after click -->
+
+        <div class="game-play">
+        <div class="gameplay-circle" id="gameplay-circle1">  
+        <div class="animate" id="animate1">
+            <div class="circle delay1"></div>
+            <div class="circle delay2"></div>
+            <div class="circle delay3"></div>
+            <div class="circle delay4"></div>
+        </div>
+            <p id="indicater">YOU SELECTED</p>
+        <div>
+            <img src="./assets/scissors.png" id="img1"/>
+        </div>
+        </div>
+        <div class="win-template">
+          <h1>YOU WIN</h1>
+          <p>AGAINST PC</p>
+          <button id="play-again">PLAY AGAIN</button>
+        </div>
+        <div class="gameplay-circle" id="gameplay-circle2">
+            <div class="animate" id="animate2">
+                <div class="circle delay1"></div>
+                <div class="circle delay2"></div>
+                <div class="circle delay3"></div>
+                <div class="circle delay4"></div>
+            </div>
+            <p id="indicater">PC SELECTED</p>
+            <div>
+                <img src="./assets/rock.png" id="img2"/>
+            </div>
+        </div>
+        </div>
+       </div>
+       <!-- games rules -->
+       <div class="game-rules" id="rules">
+        <button onclick="rules.style.display='none'">&times</button>
+        <h1>Game Rules</h1>
+        <ul>
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, 
+             shoot” or just “rock, paper, scissors.”</li>
+             <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+             <li>If both players lay down the same hand, each player lays down another hand</li>
+        </ul>
+       </div>
+       
+       <div class="btn-section">
+        <a><button id="btn1" onclick="rules.style.display='block'">RULES</button></a>
+        <a href="score.html" target="_self"><button  id="btn2">NEXT</button></a>
+       </div>
+        </section>
+    </main>
+    
+</body>
+</html>
